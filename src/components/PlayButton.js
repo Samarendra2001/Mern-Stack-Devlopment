@@ -7,13 +7,13 @@ function PlayButton({message,children,onPlay,onPause}){
         e.stopPropagation()
 
         if(playing) onPause()
-        else onPlay();
+        else onPlay(); 
 
         playing = !playing;
     }
 
     return (
-        <button onClick={handleClick}>{children} : {playing?'>':'||'}</button>
+        <button onClick={handleClick}>{children} : {playing?'▶️':'⏸️'}</button>
     )
 
 }
