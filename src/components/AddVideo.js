@@ -20,7 +20,7 @@ function AddVideo({addVideos}) {
   }
   function handleChange(e) {
     setVideo({...video,
-        [e.target.name] : e.target.value
+        [e.target.name] : e.target.value //this is for pickup the value from the form
     })
   }
 
