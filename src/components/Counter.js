@@ -7,9 +7,10 @@ function Counter(){
     function handleClick(e){
         e.stopPropagation();
        
-       setNumber(number=>number+1);
-       setNumber(number=>number+1);
-       setNumber(number=>number+1);
+       //setNumber(number+1);//this is for single click at a time 
+       setNumber(number=>number+1);//this is for multiclick at a time means if u click 10 times at a time it'll give u 10.
+       //setNumber(number=>number+1);
+       //setNumber(number=>number+1);
         
         console.log(number)
     }
