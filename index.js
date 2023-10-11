@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => { /*  Server Created */
           .replace('**price**', product.price)
           .replace('**rating**', product.rating)
           res.end(modifiedIndex);
-          return;
+          return;//this is for ending the server 
   }
 // the above code is for products like if the url starts with (/product) then it will show the result
 //   '/product':
